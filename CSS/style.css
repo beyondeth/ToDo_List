@@ -1,0 +1,121 @@
+.hidden{
+    display: none;
+}
+
+body{
+    position: relative;
+    background-size: cover;
+    min-height:100vh;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    color: white;
+}
+
+body::after{
+    position: absolute;
+    content: "";
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.43);
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+  
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+#login-form button{
+    margin-top: 6px;
+}
+
+input {
+    text-align: center;
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+form{
+    align-items: center;
+}
+
+#visible input{
+    width: 400px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+hr{
+    margin-Top: 18px;
+    margin-bottom: 18px;
+}
+#greeting{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#clock{
+    font-size: 10em;
+    margin-bottom: 18px;
+    margin-top: 3px;
+}
+
+#list-box{
+    text-align: left;
+    padding: 0;
+    width: 530px;
+
+}
+li {
+    margin: 40px 0px;
+}
+
+#list-box button {
+    left: 580px;
+    border: 1px solid #f7c049;
+    background-color: #e7be38;
+    margin-top: -3px;
+    position: absolute;
+    padding: 10px 12px;
+}
+
+#weather span{
+    float: right;
+    margin-bottom: -33px;
+}

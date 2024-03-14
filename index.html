@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <title>Your To-Do-List-App</title>
+    </head>
+
+
+
+    <body>
+        <div class="box">
+
+            <form id="login-form" class="hidden">
+                <input required maxlength="15" type="text" placeholder="what is your name" />
+                <button>Log In</button>
+            </form>
+
+
+            <div id="visible" class="hidden">
+
+                <div id="weather">
+                    <span></span>
+                </div>
+                <h1 id="clock"></h1>
+                <hr></hr>
+                <h1 id="greeting"></h1>
+
+                <form id="todo-form">
+                    <input type="text" placeholder="계획했던 일과 하고 싶은것을 적어보세요" required />
+                </form>
+                
+                    
+
+                    
+    
+                <div id="list-box">
+                    <ul id="todo-list"></ul>
+                </div>        
+                
+                <div id="quote">
+                <span></span>
+                <hr></hr>
+                <span></span>
+                </div>
+            </div>        
+        </div>       
+            
+
+    
+             
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+
+    </body>
+</html>
