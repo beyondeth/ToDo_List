@@ -121,27 +121,36 @@ li {
 }
 
 
-/* style.css */
-
-/* 기본 스타일 유지 */
-
-/* 화면이 600px 이하일 때의 스타일 */
 @media screen and (max-width: 600px) {
-    /* 로그인 폼 */
-    #login-form input[type="text"] {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #login-form button {
-        width: 100%;
-    }
-
-    /* 할 일 목록 폼 */
+    /* 로그인 폼과 할 일 목록 폼의 너비 조정 */
+    #login-form input[type="text"],
     #todo-form input[type="text"] {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 90%; /* 더 좁은 화면에 대비하여 너비를 줄임 */
     }
 
-    /* 기타 스타일 유지 */
+    #login-form button,
+    #todo-form button {
+        width: 90%; /* 더 좁은 화면에 대비하여 버튼의 너비를 줄임 */
+    }
+
+    /* 기타 스타일 조정 */
+    h1 {
+        font-size: 1.5em; /* 더 작은 폰트 크기로 조정 */
+    }
+
+    #clock {
+        font-size: 6em; /* 더 작은 시계 폰트 크기로 조정 */
+    }
+
+    #list-box {
+        width: 90%; /* 더 좁은 화면에 대비하여 목록 상자의 너비를 줄임 */
+    }
+
+    li {
+        margin: 20px 0; /* 더 작은 간격으로 조정 */
+    }
+
+    #list-box button {
+        left: 450px; /* 더 좁은 화면에 대비하여 버튼 위치 조정 */
+    }
 }
