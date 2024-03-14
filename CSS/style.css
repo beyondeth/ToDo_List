@@ -119,3 +119,29 @@ li {
     float: right;
     margin-bottom: -33px;
 }
+
+
+/* style.css */
+
+/* 기본 스타일 유지 */
+
+/* 화면이 600px 이하일 때의 스타일 */
+@media screen and (max-width: 600px) {
+    /* 로그인 폼 */
+    #login-form input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #login-form button {
+        width: 100%;
+    }
+
+    /* 할 일 목록 폼 */
+    #todo-form input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* 기타 스타일 유지 */
+}
